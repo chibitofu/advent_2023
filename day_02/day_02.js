@@ -39,7 +39,8 @@ function getData(fileName){
 };
 
 function computeValidGames(fileName) {
-    const games = getData(fileName).split('\n');
+    //splits on lines and removes empty lines
+    const games = getData(fileName).split('\n').filter(Boolean);
     let idSum = 0;
 
     for (let i = 0; i < games.length; i++) {
@@ -134,7 +135,8 @@ Adding up these five powers produces the sum 2286.
 What is the sum of the power of these sets?
 */
 function computeMinColors(fileName) {
-    const games = getData(fileName).split('\n');
+    //splits on lines and removes empty lines
+    const games = getData(fileName).split('\n').filter(Boolean);
     let count = 0;
 
     for (let i = 0; i < games.length; i++) {
@@ -179,5 +181,10 @@ function minColors(game){
     return gameObject["colors"];
 };
 
+//expected 1867
 console.log("game id sum:", computeValidGames('input.txt'));
+console.log("expected:", 1867)
+
+//expected 84538
 console.log("min set power:", computeMinColors('input.txt'));
+console.log("expected:", 84538)

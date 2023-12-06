@@ -1,6 +1,7 @@
-let input1 = 'two3bhlrgqjxbc6crzbvzmz9nqfdtztvqbhcrjptdvm'
-let input2 = 'rcmlkj5'
-let input3 = 'lltwo4ninestwoseven1l'
+// tests
+// let input1 = 'two3bhlrgqjxbc6crzbvzmz9nqfdtztvqbhcrjptdvm'
+// let input2 = 'rcmlkj5'
+// let input3 = 'lltwo4ninestwoseven1l'
 
 function getData(){
     const fs = require('fs');
